@@ -29,7 +29,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnIngreso = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        BtnEntregar = new javax.swing.JButton();
+        btnEntregar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnUsuariosIngreso = new javax.swing.JButton();
@@ -47,7 +47,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jLabel1.setText("Ingreso de equipo");
 
-        BtnEntregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/delivery_logistic_warehouse_storage_deliver_icon_192880.png"))); // NOI18N
+        btnEntregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/delivery_logistic_warehouse_storage_deliver_icon_192880.png"))); // NOI18N
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Reparacion1.png"))); // NOI18N
 
@@ -90,7 +90,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(54, 54, 54))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(BtnEntregar, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEntregar, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
         layout.setVerticalGroup(
@@ -109,7 +109,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addComponent(jLabel1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BtnEntregar)
+                    .addComponent(btnEntregar)
                     .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -161,7 +161,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton BtnEntregar;
+    public javax.swing.JButton btnEntregar;
     public javax.swing.JButton btnIngreso;
     private javax.swing.JButton btnUsuariosIngreso;
     public javax.swing.JButton jButton1;
