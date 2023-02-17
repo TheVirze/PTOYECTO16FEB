@@ -155,7 +155,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     public javax.swing.JButton BtnEntregar;
     public javax.swing.JButton btnIngreso;
     private javax.swing.JButton btnUsuariosIngreso;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
