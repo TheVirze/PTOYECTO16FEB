@@ -5,6 +5,7 @@ public class reparacion {
     String reparacion;
     String tecnico;
     String fecha;
+    String fecharr;
     
     
 }
