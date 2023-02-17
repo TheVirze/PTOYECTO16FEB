@@ -35,7 +35,7 @@ public class frmPropetarios extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtPropetarios = new javax.swing.JTable();
         btnIngresodepropetarios = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,7 +49,7 @@ public class frmPropetarios extends javax.swing.JFrame {
 
         jLabel4.setText("TELEFONO:");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtPropetarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -60,7 +60,7 @@ public class frmPropetarios extends javax.swing.JFrame {
 
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jtPropetarios);
 
         btnIngresodepropetarios.setText("INGRESO DE PROPETARIOS");
 
@@ -159,7 +159,7 @@ public class frmPropetarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jtPropetarios;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtTelefono;
