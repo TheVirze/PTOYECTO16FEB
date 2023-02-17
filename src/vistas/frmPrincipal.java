@@ -29,6 +29,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnIngreso = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        BtnEntregar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,6 +41,9 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
 
         jLabel1.setText("Ingreso de equipo");
+
+        BtnEntregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/delivery_logistic_warehouse_storage_deliver_icon_192880.png"))); // NOI18N
+        BtnEntregar.setText("Entregar Equipo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,6 +58,10 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addGap(67, 67, 67)
                         .addComponent(jLabel1)))
                 .addContainerGap(314, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(BtnEntregar, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -62,7 +70,9 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addComponent(btnIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addContainerGap(257, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
+                .addComponent(BtnEntregar)
+                .addGap(65, 65, 65))
         );
 
         pack();
@@ -108,6 +118,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton BtnEntregar;
     public javax.swing.JButton btnIngreso;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
