@@ -9,7 +9,7 @@ package vistas;
  *
  * @author umg
  */
-public class frmIngreso extends javax.swing.JFrame {
+public class frmIngreso extends javax.swing.JDialog {
 
     /**
      * Creates new form frmIngreso
