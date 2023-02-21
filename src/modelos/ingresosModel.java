@@ -12,7 +12,7 @@ public class ingresosModel {
  this.ListaIngresos.add(NuevoIngreso);
 }   
 
-public ArrayList ListarIngresos()
+public ArrayList ListaIngresos()
 {
     return ListaIngresos;
 }        

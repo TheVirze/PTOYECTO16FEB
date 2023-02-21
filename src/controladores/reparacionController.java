@@ -12,7 +12,7 @@ public class reparacionController implements ActionListener {
     frmPrincipal vistaPrincipal;
     frmReparacion vistaReparacion;
     reparacionModel modeloReparacion;
-    public DefaultTableModel TablaUsuarios = new DefaultTableModel();
+    public DefaultTableModel TablaReparacion = new DefaultTableModel();
     
     public reparacionController(frmPrincipal vistaPrincipal, frmReparacion vistaReparacion,
             reparacionModel modeloReparacion) {
@@ -25,11 +25,11 @@ public class reparacionController implements ActionListener {
         
         this.vistaPrincipal.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
         this.vistaPrincipal.setVisible(true);
-        this.TablaUsuarios.addColumn("CODIGO DE EQUIPO");
-        this.TablaUsuarios.addColumn("DESCRIPCION DE LA REPARACIÓN A REALIZAR");
-        this.TablaUsuarios.addColumn("TÉCNICO ASIGNADO");
-        this.TablaUsuarios.addColumn("FECHA DE INGRESO");    
-        this.vistaReparacion.jtReparacion.setModel(TablaUsuarios);
+        this.TablaReparacion.addColumn("CODIGO DE EQUIPO");
+        this.TablaReparacion.addColumn("DESCRIPCION DE LA REPARACIÓN A REALIZAR");
+        this.TablaReparacion.addColumn("TÉCNICO ASIGNADO");
+        this.TablaReparacion.addColumn("FECHA DE INGRESO");    
+        this.vistaReparacion.jtReparacion.setModel(TablaReparacion);
     }
 
     @Override
@@ -41,13 +41,17 @@ public class reparacionController implements ActionListener {
         }
         
         if(e.getSource() == this.vistaReparacion.btnReparacion){
-            this.vistaReparacion.txtCodigo.getText();
-            this.vistaReparacion.txtReparacionA.getText();
-            this.vistaReparacion.txtTecnico.getText();
-            this.vistaReparacion.txtFecha.getText();
+                 this.modeloReparacion.AgregarReparacion(this.vistaReparacion.txtCodigo.getText(),
+                    this.vistaReparacion.txtReparacionA.getText(),
+                    this.vistaReparacion.txtTecnico.getText(),
+                    this.vistaReparacion.txtFecha.getText());
             
-            this.TablaUsuarios.addRow(new Object[]{this.modeloReparacion.
-        }
+            this.TablaReparacion.addRow(new Object[]{this.modeloReparacion.ListaReparacion.get(0).getCodigo(),
+            this.modeloReparacion.ListaReparacion.get(0).getReparacion(), 
+            this.modeloReparacion.ListaReparacion.get(0).getTecnico(),
+            this.modeloReparacion.ListaReparacion.get(0).getFecha()});
+                
+            }
         
     }
  

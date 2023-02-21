@@ -30,7 +30,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnIngreso = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btnEntregar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnReparacion1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnUsuariosIngreso = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -49,7 +49,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnEntregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/delivery_logistic_warehouse_storage_deliver_icon_192880.png"))); // NOI18N
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Reparacion1.png"))); // NOI18N
+        btnReparacion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Reparacion1.png"))); // NOI18N
 
         jLabel2.setText("ENVIAR A REPARACION");
 
@@ -73,7 +73,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(btnIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnReparacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel2))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
@@ -103,9 +103,9 @@ public class frmPrincipal extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnEntregar)
-                    .addComponent(jButton1))
+                    .addComponent(btnReparacion1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -158,8 +158,8 @@ public class frmPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnEntregar;
     public javax.swing.JButton btnIngreso;
+    public javax.swing.JButton btnReparacion1;
     private javax.swing.JButton btnUsuariosIngreso;
-    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
