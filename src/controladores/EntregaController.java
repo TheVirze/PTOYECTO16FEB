@@ -48,7 +48,7 @@ public class EntregaController implements ActionListener
               
               
                if(e.getSource()== this.vistaEntrega.btnEntregarEquipo){
-            this.modeloEntrega.AgregarUsuarios(this.vistaEntrega.TxtCodEquipo.getText(),
+            this.modeloEntrega.AgregarUsuarios(this.vistaEntrega.txtCodEquipo.getText(),
                     this.vistaEntrega.txtNombre.getText(),
                     this.vistaEntrega.txtFecha.getText(),
                     this.vistaEntrega.txtDescripcion.getText());
